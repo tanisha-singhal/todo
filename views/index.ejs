@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="/styles/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    
+    <a href="/login">LOGIN</a>
+    <a href="/register" >REGISTER</a>
+    <a href="/logout">LOGOUT</a>
+    <h1 id="todo">TODO <span>LIST</span></h1>
+    <form action="" id="form">
+    <input type="text" id="item" name="item" placeholder="ADD TODO..">
+    <button id="add">Add</button>
+    </form>
+    <ul id="list"></ul>
+    </header>
+</body>
+<script>
+      document.getElementById("add").onclick = function(e) {
+      e.preventDefault();
+       const  text = document.getElementById("item").value;
+       const node = document.createElement("Li");
+       const textnode=document.createTextNode(text);
+       node.append(textnode);
+       document.getElementById("list").append(node);
+       document.getElementById("item").value='';
+    }
+</script>
+</html>

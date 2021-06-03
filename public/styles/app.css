@@ -1,0 +1,45 @@
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+#todo{
+    text-align: center;
+    margin-top:200px;
+    font-size:xx-large;
+    color:#636582;
+}
+header{
+    justify-content: center;
+}
+span{
+    color:#050B57;
+    font-weight: bold;
+}
+#item{
+    width:50%;
+    height:25px;
+    justify-content: center;
+    margin-left:25%;
+}
+#list{
+    color:#3A4E8C;
+    margin-left:25%;
+    font-size:large;
+    font-weight:500;
+    font-family:'Montserrat', sans-serif;
+}
+#list :hover{
+    color:red;
+}
+
+#add{
+    width:60px;
+    height:30px;
+    background-color:#676875;
+    color:white;
+}
+a{
+    width:65px;
+    height:30px;
+   
+
+}
